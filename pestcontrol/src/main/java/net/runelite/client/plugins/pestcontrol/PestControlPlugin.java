@@ -136,7 +136,7 @@ public class PestControlPlugin extends Plugin {
 		if (client != null && player != null && client.getGameState() == GameState.LOGGED_IN && run) {
 			if (!utils.isAnimating() && !utils.isMoving(beforeLoc)) {
 				if (!isInPestControl() && !isInBoat()) {
-						GameObject gangplank = utils.findNearestGameObject(25631);
+						GameObject gangplank = utils.findNearestGameObject(14315);
 						if (gangplank != null) {
 							targetMenu = new MenuEntry("", "gangplank", gangplank.getId(), MenuOpcode.GAME_OBJECT_FIRST_OPTION.getId(),
 									gangplank.getSceneMinLocation().getX(), gangplank.getSceneMinLocation().getY(), false);
